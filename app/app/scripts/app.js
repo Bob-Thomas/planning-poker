@@ -9,7 +9,23 @@
  * Main module of the application.
  */
 angular
-  .module('planningPokerApp', [
+  .module('planningPoker', [
+
+    //modules
+
+    //Services
+    'planningPoker.Services.Application',
+    'planningPoker.Services.Socketio',
+
+    //Controllers
+    'planningPoker.Controllers.ActionBar',
+
+
+    //Directives
+    'planningPoker.Directives.SideMenu',
+
+
+     //third party modules
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -33,8 +49,10 @@ angular
                     '': {
                         templateUrl: '/views/main.html'
                     },
-                    'navbar@home': {
-                        templateUrl: '/views/navbar.html'
+                    'header@home': {
+                        templateUrl: '/views/actionbar.html',
+                        controller: 'actionBarCtrl',
+                        controllerAs: 'actionBar'
                     },
                     'footer@home': {
                         templateUrl: '/views/footer.html'
@@ -106,4 +124,7 @@ angular
                 }
             });
     }]
-  );
+  )
+  .run(function(application) {
+      application.startListeners();
+  });

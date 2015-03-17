@@ -1,0 +1,41 @@
+.side-menu {
+  @include box-shadow(0px 0px 4px #333333);
+  background:$main-color;
+	position: fixed;
+  width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+  left: -240px;
+
+  &.side-menu-open {
+    left: 0px;
+  }
+
+  h3 {
+  	color: white;
+  	font-size: 1.9em;
+  	padding: 20px;
+  	margin: 0;
+  	font-weight: 300;
+    background: $main-color;
+    text-align: center;
+  }
+
+  a {
+  	display: block;
+  	color: #fff;
+  	font-size: 1.1em;
+  	font-weight: 300;
+    @include box-shadow(0px 0px 2px #333333);
+    padding: 1em;
+
+    &:active {
+      background: #afdefa;
+      color: #47a3da;
+    }
+  }
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
