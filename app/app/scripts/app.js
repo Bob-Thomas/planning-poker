@@ -79,7 +79,7 @@ angular
                 url: '/create',
                 views: {
                     'content@home': {
-                        templateUrl: '/views/about.html'
+                        templateUrl: '/views/create_room.html'
                     }
                 }
             })
