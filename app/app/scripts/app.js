@@ -23,6 +23,7 @@ angular
 
     //Directives
     'planningPoker.Directives.SideMenu',
+    'planningPoker.Directives.CardGrid',
 
 
      //third party modules
