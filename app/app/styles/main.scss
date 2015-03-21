@@ -7,81 +7,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "variable.scss";
 @import "navbar.scss";
 @import "side_menu.scss";
+@import "button.scss";
+@import "input.scss";
+@import "statistics.scss";
+@import "card.scss";
+@import "carousel.scss";
 
 body {
-    background: $main-color;
+  background: $main-background-color;
+  font-family: 'Open Sans';
 }
 
-.btn-primary {
-    background: lighten($main-color, 5%);
-    border-color: darken($main-color, 5%);
-    width: 100%;
-    font-size: 1.4em;
-    padding: 10px 0px 10px 0px;
-    margin-top: 11px;
-}
-
-.form-control {
-    color:white;
-    border:0;
-    border-radius:0;
-    background: darken($main-color, 10%);
-}
-
-.room-name-input {
-  border: none;
-  background: darken($main-color, 10%);
-  color: white;
-  font-size: 1.9em;
-  text-align: center;
-  height: 71px;
-  width:100%;
-  margin-top: -6%;
-
-  &:active {
-    border:none;
-  }
-  &:focus {
-    outline: 0;
-    background: darken($main-color, 5%);
-    box-shadow: 0px 0px 19px #FFFFFF;
-  }
-}
-
-
-.card-grid {
-  h1 {
-    text-align: center;
-    color:white;
-  }
-  overflow:hidden;
-  .deck {
-    position: relative;
-    display: none;
-    &.active {
-      @include single-transition(opacity, 1s);
-      display: block;
-    }
-    .card {
-      border: 1px solid black;
-      background: #88D792;
-      width: 68px;
-      height: 91px;
-      float: left;
-      border-radius: 7px;
-      font-size: 2em;
-      margin-right: 4px;
-      margin-top: 7px;
-      margin-left: 8px;
-      line-height: 81px;
-      text-align: center;
-    }
-  }
-}
-
-.statistics {
-    text-align: center;
-    .stats-users {
-        font-size: 1.5em;
-    }
-}

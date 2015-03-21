@@ -1,7 +1,11 @@
-<input type="text" class="form-control" name="username" value="" placeholder='Username'>
-<a class='btn btn-primary' ui-sref='home.rooms.create'>Create room</a>
-<a class='btn btn-primary' ui-sref='home.rooms.join'>Join room</a>
+<div class="container">
+  <input type="text" class="form-control" name="username" value="" placeholder='Username'>
+  <div class="option-buttons">
+    <a class='btn btn-danger' ui-sref='home.rooms.create'>Create room</a>
+    <a class='btn btn-success' ui-sref='home.rooms.join'>Join room</a>
+  </div>
+</div>
 <div class="statistics">
-    <h1>statistics</h1>
-    <span class="stats-users">20/2000</span>
+  <h1>statistics</h1>
+  <span class="stats-users">20/2000</span>
 </div>

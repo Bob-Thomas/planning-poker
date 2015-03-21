@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('planningPoker.Services.Socketio', []).
     factory('socketio',['$rootScope',function ($rootScope) {
       var socket = io.connect();
@@ -18,7 +20,7 @@ angular.module('planningPoker.Services.Socketio', []).
                 callback.apply(socket, args);
               }
             });
-          })
+          });
         }
       };
 }]);

@@ -1,0 +1,21 @@
+.carousel{
+
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-inner {
+    .item {
+      -webkit-transition: 0.2s ease-in-out left;
+      transition: 0.2s ease-in-out left;
+      -webkit-transition: 0.2s, ease-in-out, left;
+      -moz-transition: .2s, ease-in-out, left;
+      -o-transition: .2s, ease-in-out, left;
+      transition: .2s, ease-in-out, left;
+    }
+  }
+  .carousel-control {
+    display: none;
+  }
+}
+
+

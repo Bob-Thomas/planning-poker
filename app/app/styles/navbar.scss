@@ -1,8 +1,6 @@
 .navbar-custom {
   @extend .navbar-default;
-  @include box-shadow(0px 0px 4px #333333);
-
-  background-color: $main-color;
+  background-color: $action-bar-color;
   border:0;
 
   .navbar-brand {
@@ -13,10 +11,10 @@
     border:0;
     &:focus, &:hover {
       border:0;
-      background-color: $main-color;
+      background-color: $action-bar-color;
     }
     &:not(.collapsed) {
-      background-color:$main-color;
+      background-color:$action-bar-color;
       .icon-bar {
         &:nth-child(1) {
           @include single-transition(transform, 0.5s);
@@ -34,7 +32,7 @@
     }
     .icon-bar {
       @include single-transition(transform, 0.5s);
-      background-color: black;
+      background-color: white;
     }
   }
 }

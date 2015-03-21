@@ -1,0 +1,41 @@
+.card-grid {
+  h1 {
+    text-align: center;
+    color:black;
+  }
+  .deck-container {
+    overflow: hidden;
+    position: relative;
+    float: left;
+  }
+  .deck {
+    position: relative;
+    display: block;
+    height: 182px;
+    float:left;
+    &.active {
+      left:0;
+    }
+    .card {
+      border: 1px solid $main-border-color;
+      background: $main-background-color;
+      width: 68px;
+      height: 91px;
+      float: left;
+      border-radius: 7px;
+      font-size: 2em;
+      margin-right: 4px;
+      margin-top: 7px;
+      margin-left: 8px;
+      line-height: 81px;
+      text-align: center;
+    }
+  }
+  @each $key, $value in $grid-height {
+    &.carousel-height-#{$key} {
+      .carousel-inner {
+        height: unquote($value+'px') ;
+      }
+    }
+  }
+}
